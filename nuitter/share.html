@@ -51,6 +51,8 @@
 		}
 		</script>
 		<style>
+			html { position: relative; min-height: 100%; }
+			body { margin-bottom: 100px; }
 			.img-responsive-overwrite { margin: 0 auto; }
 			.jumbotron { color: white; background-color: #80d0f0; }
 			.border { border: 1px solid white; border-radius: 15%; }
@@ -72,22 +74,33 @@
 			</div>
 		</div>
 		<div class="container">
-				<form name="f" action="#">
-					<fieldset>
-						<div class="form-group">
-							<input type="text" name="url" class="form-control" placeholder="おかず">
+			<form name="f" action="#">
+				<fieldset>
+					<div class="form-group">
+						<input type="text" name="url" class="form-control" placeholder="おかず">
+					</div>
+					<div class="form-group">
+						<div class="text-center">
+							<button type="button" class="btn btn-info" onClick="share1()">ふぅ・・・</button>
+							<button type="button" class="btn btn-info" onClick="share2()">
+								<i class="fa fa-twitter"></i>&nbsp;
+								おかずをシェアする
+							</button>
 						</div>
-						<div class="form-group">
-							<div class="text-center">
-								<button type="button" class="btn btn-info" onClick="share1()">ふぅ・・・</button>
-								<button type="button" class="btn btn-info" onClick="share2()">
-									<i class="fa fa-twitter"></i>&nbsp;
-									おかずをシェアする
-								</button>
-							</div>
-						</div>
-					</fieldset>
-				</form>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<a class="twitter-timeline" href="https://twitter.com/search?q=%22%E3%81%B5%E3%81%85%E3%83%BB%E3%83%BB%E3%83%BB%22%20%23Nuitter%20lang%3Aja" data-widget-id="634947419403194368" data-chrome="nofooter">"ふぅ・・・" #Nuitter lang:jaに関するツイート</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+				<div class="col-sm-6">
+					<a class="twitter-timeline" href="https://twitter.com/search?q=%22%E6%8A%9C%E3%81%8D%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81%22%20%23Nuitter%20lang%3Aja%20" data-widget-id="634949861461262336" data-chrome="nofooter">"抜きました！" #Nuitter lang:ja に関するツイート</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
 			</div>
 		</div>
 		<footer class="footer">
