@@ -37,16 +37,31 @@
 		function share2() {
 			var url = document.f.url.value;
 			if(url != "") {
-				var tweet = "https://twitter.com/intent/tweet?text=";
 				if(url.slice(0,4) == "http") {
-					tweet += "ここで抜きました！";
-					tweet += "&url="+document.f.url.value;
+					getTitle(url);
 				} else {
-					tweet += "『"+url+"』で抜きました！";
+					share3(null, url);
 				}
-				tweet += "&hashtags=Nuitter&target=_blank";
-				location.href = tweet;
 			}
+		}
+		function share3(url, title) {
+			var tweet = "https://twitter.com/intent/tweet?text=";
+			if(title != null) tweet += "『"+title+"』で抜きました！";
+			else tweet += "ここで抜きました！"
+			if(url != null) tweet += "&url="+url;
+			tweet += "&hashtags=Nuitter&target=_blank";
+			location.href = tweet;
+		}
+		function getTitle(url){
+			var xhr = new XMLHttpRequest();
+			xhr.onload = function() {
+				var title = this.responseXML.title||"no title";
+				share3(url, title);
+			}
+			xhr.onerror = share3(url, null);
+			xhr.open("GET", url);
+			xhr.responseType = "document";
+			xhr.send(null);
 		}
 		</script>
 		<style>
