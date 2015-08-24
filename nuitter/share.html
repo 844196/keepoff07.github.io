@@ -46,22 +46,24 @@
 		}
 		function share3(url, title) {
 			var tweet = "https://twitter.com/intent/tweet?text=";
-			if(title != null) tweet += "『"+title+"』で抜きました！";
+			if(title != null) tweet += "『"+encodeURI(title)+"』で抜きました！";
 			else tweet += "ここで抜きました！"
 			if(url != null) tweet += "&url="+url;
 			tweet += "&hashtags=Nuitter&target=_blank";
 			location.href = tweet;
 		}
 		function getTitle(url){
-			var xhr = new XMLHttpRequest();
-			xhr.onload = function() {
-				var title = this.responseXML.title||"no title";
-				share3(url, title);
-			}
-			xhr.onerror = share3(url, null);
-			xhr.open("GET", url);
-			xhr.responseType = "document";
-			xhr.send(null);
+			$.ajax({
+				url : "http://query.yahooapis.com/v1/public/yql?format=json&q=" + encodeURI("select head.title from html where url=\"" + encodeURI(url) + "\" and xpath=\"//*\""),
+				dataType : "jsonp",
+				success : function(json){
+					var title = json.query.results.html.head.title || "no title";
+					share3(url, title);
+				},
+				error : function(){
+					share3(url, null);
+				}
+			});
 		}
 		function share4(code) {
 			if(code == 13) {
