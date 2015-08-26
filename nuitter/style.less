@@ -1,0 +1,107 @@
+@primary: #00bcd4;
+@dark_primary: darken(@primary, 7%);
+@light_primary: lighten(@primary, 50%);
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	margin-bottom: 100px;
+}
+
+body > .container {
+	margin-bottom: 15px;
+}
+
+.header {
+	margin-bottom: 20px;
+}
+
+.jumbotron {
+	color: white;
+	background-color: @primary;
+	margin-bottom: 50px;
+	small { color: @light_primary; }
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #EEEEEE;
+	p { margin: 15px 0; }
+}
+
+.btn-info {
+	background-color: @primary;
+	border-color: darken(@primary, 3%);
+	&:hover, &:active, &:focus, &:active:hover, &:active:focus { background-color: @dark_primary; }
+}
+
+.navbar {
+	margin-bottom: 0;
+	background-color: @dark_primary;
+	border: none;
+}
+
+.navbar-brand, .navbar-text {
+	.navbar-default & { color: white; }
+}
+
+.navbar-default .navbar-toggle {
+	border: none;
+	&:hover, &:focus { background-color: transparent; }
+	.icon-bar { background-color: white; }
+}
+
+.navbar-header {
+	.navbar-brand:hover { color: white; }
+	button {
+		-webkit-transition: all 200ms ease;
+		transition: all 500ms ease;
+		&:hover { transform: rotate(180deg); }
+		.fa-bars { color: white; }
+	}
+}
+
+.navbar-default .navbar-collapse {
+	border-color: @dark_primary;
+}
+
+.twitter-timeline {
+	margin: 0 auto 15 auto !important;
+}
+
+#social-button {
+	padding-top: 15px;
+	margin-right: 10px;
+	.in & { padding-top: 5px; padding-bottom: 5px; margin-left: 10px; }
+}
+
+#nuitter-icon {
+	padding: 10px;
+	margin: 0 auto 40px auto;
+	border: 1px solid white;
+	border-radius: 15%;
+}
+
+#usage {
+	display: table;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	img {
+		height: 80px;
+		width: 80px;
+		display: table-cell;
+		margin-right: 15px;
+	}
+	p {
+		width: 100%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
