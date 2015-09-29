@@ -1,6 +1,6 @@
 $(function() {
 	//load
-	$.getJSON("gistlist/gist.json" , function(data) {
+	$.getJSON("gistlistdata/gist.json" , function(data) {
 		var cateBukkit = $('#category_bukkit');
 		var htmlBukkit = '';
 		for(var i in data.Bukkit) {
@@ -76,6 +76,17 @@ function setEvent() {
 			button.css('display', 'none');
 			parent.find('#code_hide').css('display', 'inline');
 		});
+		$('body a').click(function(){
+			var link = $(this);
+			if(link.attr('href').indexOf('category') != -1) {
+				var parent = $(link).parents('.panel');
+				var pos = $(parent).offset().top;
+				$("html,body").animate({scrollTop : pos}, 500);
+				return false;
+			} else {
+				return true;
+			}
+		});
 		
 		var cateBukkit = $('#category_bukkit');
 		var cateMC = $('#category_minecraft');
@@ -123,6 +134,12 @@ function setEvent() {
 			setCateBukkit.attr('class', 'btn btn-default');
 			setCateMC.attr('class', 'btn btn-default');
 			setCateOther.attr('class', 'btn btn-default active');
+		}
+		var hash = location.hash;
+		if(hash.indexOf('#') != -1) {
+			var gist = $(hash);
+			var pos = $(gist).offset().top;
+			$("html,body").animate({scrollTop : pos}, 500);
 		}
 	});
 }
