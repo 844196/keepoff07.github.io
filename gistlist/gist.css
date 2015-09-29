@@ -1,0 +1,31 @@
+body {
+	padding-top: 20px;
+	background-color: white;
+}
+/*  */
+.title {
+	color: #333;
+	font-size: 24px;
+	vertical-align: middle;
+}
+/* –¢–K–â‘Ò‹@ */
+.title:link {
+	color: #333;
+	text-decoration: none;
+}
+/* –K–âÏ‚İ‘Ò‹@ */
+.title:visited {
+	color: #333;
+	text-decoration: none;
+}
+/* ‘I‘ğ */
+.title:hover {
+	opacity: 0.8;
+}
+
+.display{ display: inline; }
+.display-sm{ display: none; }
+@media screen and (max-width: 480px) {
+	.display{ display: none; }
+	.display-sm{ display: inline; }
+}
