@@ -79,23 +79,4 @@ body {
 	background-color: #CFA68B;
 	box-shadow: 1px 1px 2px #333333;
 }
-@media screen and (max-width: 540px) {
-	#content {
-		width: 100%;
-	}
-	.head {
-		width: 100%;
-	}
-	.icon {
-		width: 24%;
-	}
-	.display {
-		width: 60%;
-	}
-	.stat-display {
-		width: 20%;
-	}
-	.content-text .stat span {
-		font-size: 75%;
-	}
-}
+
