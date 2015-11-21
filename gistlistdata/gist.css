@@ -1,24 +1,41 @@
 body {
-	padding-top: 20px;
+	padding: 0px;
 	background-color: white;
 }
+.header {
+	width: 100%;
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #E5E5E5;
+	position: relative;
+}
+.header_title {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px 40px 10px 40px;
+}
+.header_search {
+	display: inline-block;
+}
+#content {
+	padding: 10px;
+}
+
 /*  */
 .title {
 	color: #333;
 	font-size: 24px;
-	vertical-align: middle;
 }
-/* –¢–K–â‘Ò‹@ */
+/* æœªè¨ªå•æ™‚å¾…æ©Ÿ */
 .title:link {
 	color: #333;
 	text-decoration: none;
 }
-/* –K–âÏ‚İ‘Ò‹@ */
+/* è¨ªå•æ¸ˆã¿å¾…æ©Ÿ */
 .title:visited {
 	color: #333;
 	text-decoration: none;
 }
-/* ‘I‘ğ */
+/* é¸æŠæ™‚ */
 .title:hover {
 	opacity: 0.8;
 }

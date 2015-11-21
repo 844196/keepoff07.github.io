@@ -7,49 +7,42 @@
 		<meta http-equiv="Content-Script-Type" content="text/javascript">
 		<meta name="author" content="keepoff07">
 		<meta name="description" content="">
-		
-		<link rel="shortcut icon" href="gistlistdata/higecon.png" type="image/png">
-		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@keep_off07">
 		<meta name="twitter:title" content="GistList">
 		<meta name="twitter:description" content="keepoff07のGistのリストです">
-		<meta name="twitter:image" content="gistlistdata/higecon.png">
+		<meta name="twitter:image" content="http://i.imgur.com/dWkEiwO.png">
 		
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<link rel="shortcut icon" href="gistlistdata/higecon.png" type="image/png">
+		
 		<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="//code.jquery.com/jquery-2.1.4.js"></script>
+		
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+		
 		
 		<script type="text/javascript" src="gistlistdata/gist.js"></script>
 		<link type="text/css" rel="stylesheet" href="gistlistdata/gist.css">
 	</head>
 	<body>
-		<center>
-			<a class="title" href="https://gist.github.com/keepoff07">
-				Gist List
-			</a>
-			<div class="display">
-				<div class="btn-group btn-group-lg" role="group">
-					<button type="button" class="btn btn-default" id="set_category_bukkit">CraftBukkit/Spigot</button>
-					<button type="button" class="btn btn-default" id="set_category_minecraft">Minecraft</button>
-					<button type="button" class="btn btn-default" id="set_category_other">その他</button>
+		<div class="header">
+			<div class="header_title">
+				<a class="title" href="">Gist List</a>
+			</div>
+			<div class="header_search">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+						Tag
+						<span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" id="tags"></ul>
 				</div>
 			</div>
-			<div class="display-sm">
-				<br>
-				<div class="btn-group btn-group-sm" role="group">
-					<button type="button" class="btn btn-default" id="set_category_bukkit">CraftBukkit/Spigot</button>
-					<button type="button" class="btn btn-default" id="set_category_minecraft">Minecraft</button>
-					<button type="button" class="btn btn-default" id="set_category_other">その他</button>
-				</div>
-			</div>
-		</center>
-		<br>
-		<div id="category_bukkit" style="display:inline"></div>
-		<div id="category_minecraft" style="display:none"></div>
-		<div id="category_other" style="display:none"></div>
+		</div>
+		<div id="content"></div>
 	</body>
 </html>
