@@ -74,7 +74,7 @@ body > .container {
 	margin: 0 auto 15 auto !important;
 }
 
-#social-button {
+.social-button {
 	padding-top: 15px;
 	margin-right: 10px;
 	.in & { padding-top: 5px; padding-bottom: 5px; margin-left: 10px; }
@@ -103,5 +103,35 @@ body > .container {
 		width: 100%;
 		display: table-cell;
 		vertical-align: middle;
+	}
+}
+
+.btn-custom {
+	display: inline-block;
+	height: 20px;
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 11px;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	cursor: pointer;
+	background-color: #eee;
+	background-image: -webkit-linear-gradient(#fff,#dedede);
+	background-image: linear-gradient(#fff,#dedede);
+	border: #ccc solid 1px;
+	border-radius: 3px;
+	padding: 1px 4px 0 3px;
+
+	&:hover, &:focus, &:active {
+		background-color: #d9d9d9;
+		background-image: -webkit-linear-gradient(#f8f8f8,#d9d9d9);
+		background-image: linear-gradient(#f8f8f8,#d9d9d9);
+		border-color: #bbb;
+		box-shadow: none;
+	}
+
+	&:hover, &:active, &:focus {
+		text-decoration: none;
+		color: inherit;
 	}
 }
