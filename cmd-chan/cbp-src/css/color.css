@@ -1,0 +1,28 @@
+﻿.color-palet {
+	width: 32%;
+	display:inline-block;
+}
+.phone .color-palet {
+	display:block;
+}
+.color-box {
+	margin:10px;
+	height: 50px;
+	width: 50px;
+	border: 2px solid black;
+	border-radius: 50%;
+	display: inline-block;
+}
+input[type="text"].color-stat {
+	background-color: rgba(0, 0, 0, 0);
+	border: 0px solid #000;
+	font-size: 16px;
+}
+#color-format {
+	background-color: #000000;
+	border: 2px solid #AAAAAA;
+	padding: 5px 10px;
+	font: 90% Arial;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0px #353535;
+}

@@ -1,0 +1,16 @@
+﻿body {
+	background-color: #cfa68b;
+}
+.container {
+	width: 100%;
+}
+.container>h1:first-child,
+.container>h2:first-child,
+.container>h3:first-child,
+.container>h4:first-child,
+.container>h5:first-child {
+	margin-top: 0;
+}
+.phone div {
+	background-color: red;
+}

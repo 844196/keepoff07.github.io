@@ -1,0 +1,25 @@
+﻿.post {
+	padding: 5px 10px;
+	background-color: #dfc5b3;
+	border-radius: 5px;
+}
+.post .title{
+	margin: 0;
+	margin-bottom: 5px;
+	line-height: 1.2;
+	border-bottom: 1px solid #9a633f;
+	font-size: 1.75em;
+	font-weight: bold;
+}
+.post .date{
+	margin-bottom: 14px;
+	font-size: 0.85em;
+}
+.post a{
+	color: #62873E;
+	text-decoration: none;
+}
+.post a:hover{
+	color: #C2873E;
+	text-decoration: underline;
+}

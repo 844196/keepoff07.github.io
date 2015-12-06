@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>カラーパレット</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
+	
+	<script src="/cmd-chan/cbp-src/js/CMCBasicSub.js"></script>
+	<link rel="stylesheet" href="/cmd-chan/cbp-src/css/CMCBasic.css">
+	<link rel="stylesheet" href="/cmd-chan/cbp-src/css/CMCBasicSub.css">
+	
+	<script src="/cmd-chan/cbp-src/js/color.js"></script>
+	<link rel="stylesheet" href="/cmd-chan/cbp-src/css/color.css">
+	<script>$(function(){selectMenu("relation", "color");});</script>
+</head>
+<body>
+<div id="content" class="container">
+	<h1>カラーパレット</h1>
+	色置き場です。<br>
+	文字をクリックするだけで選択状態になるので、Ctrl+Cとかでコピーして使えます。<br>
+	表紙される形式は選択できます。
+	<h2>出力形式</h2>
+	<select id="color-format">
+		<option Hex="1" Upper="0" NoHash="0" selected>Hex - #1234ef</option>
+		<option Hex="1" Upper="1" NoHash="0">Hex - #1234EF</option>
+		<option Hex="1" Upper="0" NoHash="1">Hex - 1234ef</option>
+		<option Hex="1" Upper="1" NoHash="1">Hex - 1234EF</option>
+		<option Hex="0" Alpha="0" Multi="0">RGB - (255,255,255)</option>
+		<option Hex="0" Alpha="1" Multi="0">RGBA - (255,255,255,1.0)</option>
+		<option Hex="0" Alpha="0" Multi="1">R:255 G:255 B:255</option>
+	</select>
+	<hr>
+	<div class="color-palet" hex="#dfc5b3"></div>
+	<div class="color-palet" hex="#cfa68b"></div>
+	<div class="color-palet" hex="#c77e4f"></div>
+	<br>
+	<div class="color-palet" hex="#9a633f"></div>
+	<div class="color-palet" hex="#5a483c"></div>
+	<div class="color-palet" hex="#372417"></div>
+	<br>
+	<div class="color-palet" hex="#ce7a77"></div>
+	<div class="color-palet" hex="#a85451"></div>
+	<div class="color-palet" hex="#a22e2c"></div>
+	<br>
+	<div class="color-palet" hex="#62873e"></div>
+	<div class="color-palet" hex="#c2873e"></div>
+	<br>
+	<div class="color-palet" hex="#d2cfda"></div>
+	<div class="color-palet" hex="#b3b0b9"></div>
+	<br>
+	<div class="color-palet" hex="#9f9da7"></div>
+	<div class="color-palet" hex="#777480"></div>
+</div>
+</body>
+</html>
