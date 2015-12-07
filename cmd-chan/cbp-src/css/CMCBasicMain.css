@@ -24,7 +24,7 @@ body {
 /* メニュー */
 .menu>li {
 	margin: 0;
-	width: calc(100%/3);
+	width: calc(100%/4);
 	float: left;
 	font-size: 18px;
 	text-align: center;

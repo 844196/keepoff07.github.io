@@ -13,6 +13,15 @@ $(function() {
 			}
 		}
 	});
+
+	$('#tweet').click(function() {
+		window.open(
+			encodeURI(decodeURI($(this).attr('href'))),
+			'tweetwindow',
+			'width=600, height=300, personalbar=0, toolbar=0, scrollbars=1, resizable=!'
+		);
+		return false;
+	});
 });
 
 function Query() {
