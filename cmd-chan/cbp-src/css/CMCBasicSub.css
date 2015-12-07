@@ -14,3 +14,33 @@
 .phone div {
 	background-color: red;
 }
+
+.cmdchan-say img {
+	vertical-align: middle;
+}
+.cmdchan-say div {
+	position: relative;
+	margin-left: 20px;
+	padding: 10px 15px;
+	display: inline-block;
+	width: auto;
+	min-width: 115px;
+	background: #dfc5b3;
+	border-radius: 10px;
+	line-height: 20px;
+	text-align: left;
+	vertical-align: middle;
+	z-index: 0;
+}
+.cmdchan-say div:after {
+	content: "";
+	position: absolute;
+	margin-top: -10px;
+	top: 50%; left: -10px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent #dfc5b3 transparent transparent;
+}
