@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>Twitterスタンプ</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="//code.jquery.com/jquery-2.1.4.js"></script>
+	
+	<script src="/cmd-chan/cbp-src/js/CMCBasicSub.js"></script>
+	<link rel="stylesheet" href="/cmd-chan/cbp-src/css/CMCBasic.css">
+	<link rel="stylesheet" href="/cmd-chan/cbp-src/css/CMCBasicSub.css">
+	<style>
+	.icon {
+		margin: 5;
+		width: 128px;
+		border: 5px solid #C77E4F;
+		border-radius: 12px;
+		background-color: #CFA68B;
+	}
+	</style>
+	<script>
+	$(function(){
+		selectMenu("relation", "twitterstamp");
+		$('.icon').click(function(){
+			var url = "http://twitter.com/intent/tweet?text=%0A%0A";
+			url += "%23%e3%82%b3%e3%83%9e%e3%83%96%e3%83%ad%e3%81%a1%e3%82%83%e3%82%93";
+			url += "%0Ahttp://keepoff07.github.io/cmd-chan/?page=twitterstamp";
+			url += "%0Ahttp://"+$(this).attr('stamp');
+			window.open(
+				url,
+				'tweetwindow',
+				'width=600, height=300, personalbar=0, toolbar=0, scrollbars=1, resizable=!'
+			);
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="content" class="container">
+	<h1>Twitterスタンプ</h1>
+	<div class="cmdchan-say">
+		<img src="http://i.imgur.com/K1kIcK5.png">
+		<div>
+		<h4 style="margin-top:0;">使い方</h4>
+		① 使いたい画像を選択。<br>
+		② ツイート画面が出てきたら呟きを入力して呟く。
+		</div>
+	</div>
+	<h2>スタンプ画像</h2>
+	<input class="icon" type="image" alt="微笑む" title="微笑む" src="http://i.imgur.com/otyI674.png" stamp="pic.twitter.com/FwWjkGbAZj">
+	<input class="icon" type="image" alt="笑顔" title="笑顔" src="http://i.imgur.com/0JKSkFa.png" stamp="pic.twitter.com/ZRfRnF9MBA">
+	<input class="icon" type="image" alt="ニッコリ" title="ニッコリ" src="http://i.imgur.com/1m54Fdg.png" stamp="pic.twitter.com/S9D2ut1sH1">
+	<input class="icon" type="image" alt="困る" title="困る" src="http://i.imgur.com/j9ZTnJC.png" stamp="pic.twitter.com/udoRdtektH">
+	<input class="icon" type="image" alt="話す" title="話す" src="http://i.imgur.com/IncbNlv.png" stamp="pic.twitter.com/tfZB7w6UdR">
+	<input class="icon" type="image" alt="驚く" title="驚く" src="http://i.imgur.com/SZ4YFPw.png" stamp="pic.twitter.com/kEUZRKZRnE">
+	<input class="icon" type="image" alt="泣く" title="泣く" src="http://i.imgur.com/GslYA88.png" stamp="pic.twitter.com/AHsAVLom7R">
+	<input class="icon" type="image" alt="恐れる" title="恐れる" src="http://i.imgur.com/JDnBlfK.png" stamp="pic.twitter.com/L6LXSz3ZE9">
+	<input class="icon" type="image" alt="無表情" title="無表情" src="http://i.imgur.com/2dYHNxm.png" stamp="pic.twitter.com/YTbGC1nnsh">
+	<input class="icon" type="image" alt="呆れる" title="呆れる" src="http://i.imgur.com/RW5GfZu.png" stamp="pic.twitter.com/DlOEhyzwQW">
+	<input class="icon" type="image" alt="寝る" title="寝る" src="http://i.imgur.com/YX9zh0t.png" stamp="pic.twitter.com/FjXddMWCuV">
+	<input class="icon" type="image" alt="ジト目" title="ジト目" src="http://i.imgur.com/ZFZJxc5.png" stamp="pic.twitter.com/tbBx3uFawb">
+	<input class="icon" type="image" alt="怒る" title="怒る" src="http://i.imgur.com/ytQZf9E.png" stamp="pic.twitter.com/ZnusPeTf1i">
+	<input class="icon" type="image" alt="焦る" title="焦る" src="http://i.imgur.com/SKYeTBx.png" stamp="pic.twitter.com/dg66inYe6J">
+	<input class="icon" type="image" alt="考える" title="考える" src="http://i.imgur.com/ca1RFJs.png" stamp="pic.twitter.com/sShAttUg8w">
+	<input class="icon" type="image" alt="放心" title="放心" src="http://i.imgur.com/j7cj5Px.png" stamp="pic.twitter.com/9lNJzw6IPv">
+	<input class="icon" type="image" alt="目が死ぬ" title="目が死ぬ" src="http://i.imgur.com/qWGXRAX.png" stamp="pic.twitter.com/GZDJITE3vB">
+	<input class="icon" type="image" alt="殺す" title="レッドストーンパウダーです" src="http://i.imgur.com/7dWJReE.png" stamp="pic.twitter.com/cw4s821Bna">
+</div>
+</body>
+</html>

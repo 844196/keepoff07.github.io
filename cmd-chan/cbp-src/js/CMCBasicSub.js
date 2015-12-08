@@ -4,7 +4,9 @@
 		$('#container').addClass('phone');
 	}
 	$(function() {
-		window.parent.$('#disp').css('height', $('body').height());
+		setTimeout(function(){
+			window.parent.$('#disp').css('height', $('body').height());
+		}, 10);
 	});
 	var patit = window.parent.$('title');
 	var befor = patit.text();
